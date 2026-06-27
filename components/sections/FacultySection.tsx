@@ -94,45 +94,42 @@ export default function FacultySection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mb-16 grid gap-8 sm:grid-cols-2 lg:gap-10"
+          className="mb-16 grid gap-6 sm:grid-cols-2 xl:grid-cols-4"
         >
           {faculty.map((member, index) => (
             <motion.div
               key={index}
               variants={item}
-              className="group overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg"
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
             >
               {/* Image */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+              <div className="relative h-[280px] w-full overflow-hidden bg-gray-100">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
                 />
               </div>
 
               {/* Content */}
-              <div className="p-6 lg:p-8">
-                <h3 className="mb-1 text-xl font-bold text-gray-900 lg:text-2xl">
+              <div className="flex flex-1 flex-col p-6">
+                <h3 className="mb-1 text-lg font-bold text-gray-900">
                   {member.name}
                 </h3>
-                <p className="mb-4 text-sm font-medium text-[#991B1B]">
+                <p className="mb-4 text-sm font-medium leading-snug text-[#991B1B]">
                   {member.role}
                 </p>
 
                 {/* Highlights */}
-                <ul className="space-y-2">
+                <div className="space-y-2 text-sm text-gray-600">
                   {member.highlights.map((highlight, highlightIndex) => (
-                    <li
-                      key={highlightIndex}
-                      className="flex items-start gap-2 text-sm text-gray-600"
-                    >
+                    <div key={highlightIndex} className="flex items-start gap-2">
                       <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-gray-400" />
                       <span className="leading-relaxed">{highlight}</span>
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
             </motion.div>
           ))}
