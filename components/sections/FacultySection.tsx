@@ -64,7 +64,7 @@ const item = {
 
 export default function FacultySection() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section id="faculty" className="bg-gradient-to-br from-[#7F1D1D] to-[#991B1B] py-20 lg:py-28">
       <div className="mx-auto max-w-[1280px] px-8 lg:px-12">
         {/* Header */}
         <div className="mb-16 text-center">
@@ -74,13 +74,13 @@ export default function FacultySection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-500">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-red-200">
               Meet Your Faculty
             </p>
-            <h2 className="mb-4 text-3xl font-bold text-gray-900 lg:text-4xl xl:text-5xl">
+            <h2 className="mb-4 text-3xl font-bold text-white lg:text-4xl xl:text-5xl">
               Learn From Practicing Legal Experts
             </h2>
-            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+            <p className="mx-auto max-w-3xl text-lg text-red-50">
               Learn directly from experienced litigators, corporate lawyers,
               legal counsels and industry professionals who have worked with
               leading law firms, multinational companies and global organizations.
@@ -100,7 +100,7 @@ export default function FacultySection() {
             <motion.div
               key={index}
               variants={item}
-              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+              className="group flex h-full flex-col overflow-hidden rounded-[10px]  bg-white shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
             >
               {/* Image */}
               <div className="relative h-[280px] w-full overflow-hidden bg-gray-100">
@@ -143,13 +143,12 @@ export default function FacultySection() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="text-center"
         >
-          <p className="mb-4 text-base text-gray-600">
-            + Industry experts from leading law firms, corporate legal teams and
-            global organizations contribute throughout the program.
+          <p className="mb-4 text-base text-red-100">
+            Learn from  corporate counsels, legal educators, and industry experts from leading organizations.
           </p>
           <a
             href="#faculty"
-            className="group inline-flex items-center gap-2 text-base font-semibold text-[#991B1B] transition-colors duration-200 hover:text-[#7f1616]"
+            className="group inline-flex items-center gap-2 text-base font-semibold text-white transition-colors duration-200 hover:text-red-100"
           >
             View Complete Faculty
             <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />

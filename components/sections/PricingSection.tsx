@@ -12,6 +12,10 @@ const benefits = [
   "Industry Expert Faculty",
   "Career & Freelancing Support",
   "Money-Back Guarantee",
+  "Completion Certificate",
+  "Merit Certificate",
+  "Alumni Community Access",
+  "Internship & Job Opportunity Groups",
 ];
 
 const trustNotes = [
@@ -72,7 +76,7 @@ export default function PricingSection() {
           <div className="mb-10 h-px bg-gray-200" />
 
           {/* Benefits Grid */}
-          <div className="mb-10 grid gap-4 sm:grid-cols-2">
+          <div className="mb-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {benefits.map((benefit, index) => (
               <motion.div
                 key={index}

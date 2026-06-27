@@ -6,8 +6,9 @@ import Link from "next/link";
 import { Mail, Globe } from "lucide-react";
 
 const navigation = [
-  { name: "About", href: "#about" },
-  { name: "Curriculum", href: "#curriculum" },
+  { name: "Why Choose", href: "#why-choose" },
+  { name: "Learning", href: "#learning" },
+  { name: "Career", href: "#career" },
   { name: "Faculty", href: "#faculty" },
   { name: "Pricing", href: "#pricing" },
   { name: "FAQ", href: "#faq" },
@@ -74,10 +75,7 @@ export default function Footer() {
               </h3>
               <ul className="space-y-3">
                 <li>
-                  <div className="mb-1 flex items-center gap-2 text-sm text-gray-500">
-                    <Mail className="h-4 w-4" />
-                    <span>Email</span>
-                  </div>
+                  
                   <a
                     href="mailto:courses@lawctopus.com"
                     className="text-base font-medium text-gray-900 transition-colors hover:text-[#991B1B]"
@@ -86,10 +84,7 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <div className="mb-1 flex items-center gap-2 text-sm text-gray-500">
-                    <Globe className="h-4 w-4" />
-                    <span>Website</span>
-                  </div>
+                 
                   <a
                     href="https://www.lawctopus.com"
                     target="_blank"
@@ -101,7 +96,7 @@ export default function Footer() {
                 </li>
                 <li className="pt-2">
                   <p className="text-sm text-gray-500">
-                    Response Time: Replies within 24 hours
+                    Response within 24 hours
                   </p>
                 </li>
               </ul>

@@ -53,7 +53,7 @@ const item = {
 
 export default function WhyChooseSection() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section id="why-choose" className="bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-[1280px] px-8 lg:px-12">
         {/* Header */}
         <div className="mb-16 text-center">

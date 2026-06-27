@@ -5,16 +5,16 @@ import { cn } from "@/lib/utils";
 
 const navItems = [
   {
-    label: "About",
-    href: "#about",
+    label: "Why Choose",
+    href: "#why-choose",
   },
   {
-    label: "Benefits",
-    href: "#benefits",
+    label: "Learning",
+    href: "#learning",
   },
   {
-    label: "Curriculum",
-    href: "#curriculum",
+    label: "Career",
+    href: "#career",
   },
   {
     label: "Faculty",

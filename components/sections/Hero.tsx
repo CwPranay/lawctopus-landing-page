@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Users, Star, Video, FileText } from "lucide-r
 
 export default function Hero() {
   return (
-    <section className="relative bg-white pt-10 pb-20 lg:pt-10 lg:pb-28">
+    <section className="relative bg-white pt-10 pb-20 lg:pt-18 lg:pb-28">
       <div className="mx-auto max-w-[1280px] px-8 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr] lg:gap-16 xl:gap-20">
           {/* Left Content - 60% */}
@@ -79,6 +79,8 @@ export default function Hero() {
                 <div className="text-sm text-gray-600">Agreements</div>
               </div>
             </div>
+
+            
           </motion.div>
 
           {/* Right Pricing Card - 40% */}

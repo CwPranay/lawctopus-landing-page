@@ -38,7 +38,7 @@ const domains = [
 
 export default function WhatYoullMaster() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section id="learning" className="bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-[1280px] px-8 lg:px-12">
         {/* Header */}
         <div className="mb-20 text-center lg:mb-24">

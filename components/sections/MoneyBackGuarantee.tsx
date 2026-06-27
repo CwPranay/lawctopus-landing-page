@@ -18,7 +18,7 @@ export default function MoneyBackGuarantee() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="rounded-3xl bg-gradient-to-br from-red-50 to-orange-50 px-8 py-16 text-center lg:px-16 lg:py-20"
+          className="rounded-3xl border border-gray-200 bg-white px-8 py-16 text-center lg:px-16 lg:py-20"
         >
           {/* Icon Badge */}
           <motion.div
@@ -28,7 +28,7 @@ export default function MoneyBackGuarantee() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mb-8 flex justify-center"
           >
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-lg lg:h-24 lg:w-24">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-gray-100 lg:h-24 lg:w-24">
               <ShieldCheck className="h-10 w-10 text-[#991B1B] lg:h-12 lg:w-12" strokeWidth={2} />
             </div>
           </motion.div>
@@ -44,7 +44,7 @@ export default function MoneyBackGuarantee() {
           </h2>
 
           {/* Description */}
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-gray-700 lg:text-xl">
+          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-gray-600 lg:text-xl">
             If the course does not meet the stated guarantee terms, eligible
             learners can request a refund according to Lawctopus' refund policy.
             This allows learners to enroll with greater confidence while
@@ -60,7 +60,7 @@ export default function MoneyBackGuarantee() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                className="flex items-center gap-2 text-base font-semibold text-gray-800"
+                className="flex items-center gap-2 text-base font-semibold text-gray-900"
               >
                 <CheckCircle className="h-5 w-5 text-green-600" />
                 <span>{highlight}</span>

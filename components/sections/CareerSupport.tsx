@@ -10,6 +10,8 @@ const benefits = [
   "Learn networking & client communication",
   "Get freelancing guidance from industry experts",
   "Receive career mentorship and practical support",
+  "Internship & Job Opportunity Sharing",
+  "One-to-One Career Coaching",
 ];
 
 const careerSessions = [
@@ -23,7 +25,7 @@ const careerSessions = [
 
 export default function CareerSupport() {
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section id="career" className="bg-white py-20 lg:py-28">
       <div className="mx-auto max-w-[1280px] px-8 lg:px-12">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_1fr] lg:gap-16 xl:gap-20">
           {/* Left Side - 55% */}
@@ -46,9 +48,7 @@ export default function CareerSupport() {
 
             {/* Description */}
             <p className="mb-10 text-lg leading-relaxed text-gray-600 lg:text-xl">
-              This course goes beyond legal drafting by helping learners build a
-              professional profile, secure internships, and confidently start
-              freelancing through practical career guidance and expert mentorship.
+              Designed for law students, young lawyers, and aspiring legal professionals, this course helps you build a strong professional profile, secure internships, and confidently launch your freelancing career through expert guidance and practical mentorship.
             </p>
 
             {/* Checklist */}
@@ -97,7 +97,7 @@ export default function CareerSupport() {
                   <h3 className="mb-2 text-2xl font-bold text-gray-900 lg:text-3xl">
                     Career Advancement
                   </h3>
-                  <p className="text-base font-semibold text-[#991B1B]">
+                  <p className="text-lg font-bold text-[#991B1B]">
                     22 Live Career Sessions
                   </p>
                 </div>

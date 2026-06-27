@@ -41,6 +41,11 @@ const faqs = [
       "Yes. The course includes a money-back guarantee as mentioned on the official course page, subject to the applicable terms and conditions.",
   },
   {
+    question: "Will I receive a certificate after completing the course?",
+    answer:
+      "Yes. Eligible learners receive a completion certificate, and outstanding performers may also receive merit certificates.",
+  },
+  {
     question: "Still have questions?",
     answer: "email",
     isSpecial: true,
@@ -55,7 +60,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="bg-white py-20 lg:py-28">
+    <section id="faq" className="bg-white py-6 lg:py-6">
       <div className="mx-auto max-w-[1280px] px-8 lg:px-12">
         {/* Header */}
         <div className="mb-16 text-center">
