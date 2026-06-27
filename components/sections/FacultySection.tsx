@@ -1,0 +1,164 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+
+const faculty = [
+  {
+    image: "/shashank.webp",
+    name: "Shashank Sardesai",
+    role: "Independent Litigator & Company Secretary",
+    highlights: [
+      "Co-Founder, EverTrust Legal",
+      "Experience with Wadia Ghandy & Co., HSA Advocates and Khaitan Legal Associates",
+      "Specializes in Commercial Contracts & Corporate Law",
+    ],
+  },
+  {
+    image: "/akanksha.webp",
+    name: "Akanksha Mishra",
+    role: "Head, Lawctopus Law School",
+    highlights: [
+      "Taught 1500+ learners",
+      "Average learner rating: 96.5/100",
+      "Commercial & Real Estate Litigation Expert",
+    ],
+  },
+  {
+    image: "/pranjal.webp",
+    name: "Pranjal Doshi",
+    role: "Associate, Walker Morris LLP (United Kingdom)",
+    highlights: [
+      "Cambridge Postgraduate",
+      "Former Trilegal & Khaitan & Co.",
+      "Expert in M&A & Shareholder Agreements",
+    ],
+  },
+  {
+    image: "/arunima.webp",
+    name: "Arunima Jha",
+    role: "Head Legal Counsel, Omnicom Media Group",
+    highlights: [
+      "10+ Years Experience",
+      "Former BookMyShow Legal Counsel",
+      "Expert in Media Law & Privacy Law",
+    ],
+  },
+];
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0 },
+};
+
+export default function FacultySection() {
+  return (
+    <section className="bg-white py-20 lg:py-28">
+      <div className="mx-auto max-w-[1280px] px-8 lg:px-12">
+        {/* Header */}
+        <div className="mb-16 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-500">
+              Meet Your Faculty
+            </p>
+            <h2 className="mb-4 text-3xl font-bold text-gray-900 lg:text-4xl xl:text-5xl">
+              Learn From Practicing Legal Experts
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg text-gray-600">
+              Learn directly from experienced litigators, corporate lawyers,
+              legal counsels and industry professionals who have worked with
+              leading law firms, multinational companies and global organizations.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Faculty Grid */}
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="mb-16 grid gap-8 sm:grid-cols-2 lg:gap-10"
+        >
+          {faculty.map((member, index) => (
+            <motion.div
+              key={index}
+              variants={item}
+              className="group overflow-hidden rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg"
+            >
+              {/* Image */}
+              <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-6 lg:p-8">
+                <h3 className="mb-1 text-xl font-bold text-gray-900 lg:text-2xl">
+                  {member.name}
+                </h3>
+                <p className="mb-4 text-sm font-medium text-[#991B1B]">
+                  {member.role}
+                </p>
+
+                {/* Highlights */}
+                <ul className="space-y-2">
+                  {member.highlights.map((highlight, highlightIndex) => (
+                    <li
+                      key={highlightIndex}
+                      className="flex items-start gap-2 text-sm text-gray-600"
+                    >
+                      <span className="mt-1.5 h-1 w-1 flex-shrink-0 rounded-full bg-gray-400" />
+                      <span className="leading-relaxed">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        {/* Bottom Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-center"
+        >
+          <p className="mb-4 text-base text-gray-600">
+            + Industry experts from leading law firms, corporate legal teams and
+            global organizations contribute throughout the program.
+          </p>
+          <a
+            href="#faculty"
+            className="group inline-flex items-center gap-2 text-base font-semibold text-[#991B1B] transition-colors duration-200 hover:text-[#7f1616]"
+          >
+            View Complete Faculty
+            <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
