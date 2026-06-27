@@ -6,13 +6,7 @@ A modern, conversion-focused redesign of the Lawctopus course page for Mastering
 
 ## Live Demo
 
-Placeholder for deployment URL.
-
----
-
-## Preview
-
-Placeholder for screenshots or GIF.
+https://lawctopus-landingpage.vercel.app/
 
 ---
 
@@ -80,8 +74,8 @@ public/
 ## Installation
 
 ```bash
-git clone <repository-url>
-cd lawctopus-course-landing-page
+git clone https://github.com/CwPranay/lawctopus-landing-page.git
+cd lawctopus-landing-page
 npm install
 npm run dev
 ```
