@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 const faculty = [
   {
-    image: "/shashank.webp",
+    image: "/Shashank.webp",
     name: "Shashank Sardesai",
     role: "Independent Litigator & Company Secretary",
     highlights: [
@@ -16,7 +16,7 @@ const faculty = [
     ],
   },
   {
-    image: "/akanksha.webp",
+    image: "/Akanksha.webp",
     name: "Akanksha Mishra",
     role: "Head, Lawctopus Law School",
     highlights: [
@@ -26,7 +26,7 @@ const faculty = [
     ],
   },
   {
-    image: "/pranjal.webp",
+    image: "/Pranjal.webp",
     name: "Pranjal Doshi",
     role: "Associate, Walker Morris LLP (United Kingdom)",
     highlights: [
@@ -36,7 +36,7 @@ const faculty = [
     ],
   },
   {
-    image: "/arunima.webp",
+    image: "/Arunima.webp",
     name: "Arunima Jha",
     role: "Head Legal Counsel, Omnicom Media Group",
     highlights: [
