@@ -69,39 +69,10 @@ app/
   page.tsx
 components/
   layouts/
-    Footer.tsx
-    MobileMenu.tsx
-    Navbar.tsx
-    NavLinks.tsx
   sections/
-    CareerSupport.tsx
-    FacultySection.tsx
-    FAQSection.tsx
-    FinalCTA.tsx
-    Hero.tsx
-    MoneyBackGuarantee.tsx
-    PricingSection.tsx
-    WhatYoullMaster.tsx
-    WhyChooseSection.tsx
   ui/
-    accordion.tsx
-    badge.tsx
-    button.tsx
-    card.tsx
-    separator.tsx
 lib/
-  utils.ts
 public/
-  cropped-Favicons-03-192x192.png
-  file.svg
-  globe.svg
-  next.svg
-  window.svg
-  Akanksha.webp
-  Arunima.webp
-  Lawctopus.webp
-  Pranjal.webp
-  Shashank.webp
 ```
 
 ---
@@ -157,6 +128,18 @@ The layout and content structure are designed to:
 - Present a modern editorial layout
 - Support a better conversion flow
 - Maintain consistent spacing and typography
+
+---
+
+## Future Improvements
+
+Potential enhancements for future iterations include:
+
+- Dark mode
+- More animations
+- CMS integration
+- Enrollment backend
+- Form validation
 
 ---
 
